@@ -3,7 +3,7 @@
 #include <sys/time.h>
 #include <math.h>
 
-#define TAM 128000
+#define TAM 512000 // Con tamaños superiores a 500000, valgrind da fallos si no cambias el tamaño del stack
 typedef struct {
 int vector[TAM];
 int ultimo;
